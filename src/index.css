@@ -1,0 +1,71 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+
+  & main{
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+    justify-content: center;
+   
+  }
+
+  & Header{
+    display: flex;
+    justify-content:flex-start;
+    background-color: rgb(100, 68, 136);
+    color: white;
+    align-items: center;
+  }
+
+  & .product-container{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    background-color: antiquewhite;
+
+  }
+  & .product{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(100, 68, 136);
+  }
+    & .card{
+      display: flex;
+      size: 20px;
+      flex-direction: column;
+      background-color: rgb(100, 68, 136);
+      border-radius: 7px;
+    }
+    & form {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+  
+      > label {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+  
+        > input {
+          height: 44px;
+          border-radius: 4px;
+          padding-inline: 18px;
+        }
+      }
+    }
+
+      & button {
+        background-color: rgb(158, 138, 222);
+        color: white;
+        height: 36px;
+        padding-inline: 18px;
+        border-radius: 18px;
+        border: none;
+        font-weight: bold;
+    
+        &:hover {
+          background-color: rgb(92, 41, 151);
+      }
+      }
+    }
